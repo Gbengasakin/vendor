@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Alata&family=Josefin+Sans:wght@300&family=Outfit&family=Poppins&display=swap');
+*{
+	box-sizing: border-box;
+	
+	margin:0;
+	padding: 0;
+}
+body{
+	background-color: whitesmoke;
+	font-family: poppins;
+}
+header{
+
+	display: flex;
+	justify-content: space-between;
+	padding: 20px 50px;
+	background-color: whitesmoke;
+	font-family:Arial Narrow;
+}
+header .link{
+	padding: 10px
+}
+header .link a{
+	padding: 5px;
+	text-decoration: none;
+	color: black
+}
+.banner{
+	background-image: url('../img/image18.jpg');
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	padding: 8% 0;
+	
+}
+.banner .text{
+	padding: 45px;
+	color: white
+}
+.banner .text h1{
+	font-size: 50px;
+}
+.banner .text h2{
+	margin-bottom: 10px;
+	font-size: 30px;
+}
+.banner .text .contact{
+	padding: 15px 20px;
+	text-decoration: none;
+	background-color: blue;
+	border-radius: 25px;
+	color: white
+}
+.side-bar{
+	margin-right: 10px;
+	position: fixed;
+	top: 1;
+	border-radius: 10px;
+	box-shadow:0 4px 10px 0 rgba(0,0,0,0.2),0 4px 20px 0 rgba(0,0,0,0.19);
+	
+	
+	background-color: white;
+	right: 0;
+	padding: 20px;
+	width: 60%;
+	display: none
+
+
+}
+.side-bar a:hover{
+	color: red
+}
+.side-bar a{
+	text-decoration: none;
+	color: black;
+	margin:10px;
+	display: block;
+	border-bottom: 1px solid red;
+	padding: 5px;
+
+}
+section{
+	margin-top: 30px;
+
+	padding: 25px
+}
+section .heading{
+	text-align: center;
+	font-size: 45px;
+}
+section .heading span{
+	border-bottom: 4px solid red
+}
+section .container{
+	display: flex;
+	justify-content: center;
+	margin-top: 40px;
+	flex-wrap: wrap;
+	align-items: flex-start;
+	
+}
+section .container .product{
+	width: 30%;
+	margin:10px;
+	border-radius: 10px;
+	padding: 0;
+	background-color: white;
+	overflow: hidden;
+	padding-bottom: 10px;
+
+}
+section .container .product img{
+	margin:0;
+}
+.product .text{
+	padding: 15px;
+}
+.product img{
+	height: 250px;
+}
+.product .text h2{
+	margin:10px 0; 
+	font-size: 35px;
+
+}
+.product .text p{
+	color: grey
+}
+.product .text a{
+	text-decoration: none;
+	color: blue;
+	padding: 8px;
+	background-color: red;
+	color:white;
+	border-radius: 5px;
+}
+.sales{
+	display: flex;
+	justify-content: space-between;
+	background-color: white;
+	padding: 20px 90px;
+}
+.arrivals{
+text-align:center;
+padding-top:15%;
+background-color: white;
+width: 55%
+}
+.arrivals p{
+font-family:Arial Narrow;
+letter-spacing:4px;
+}
+.arrivals h1{
+font-size:75px;
+font-family:Franklin Gothic Heavy;
+margin-top:0
+}
+.arrivals a{
+background-color:black;
+text-decoration:none;
+color:white;
+padding:27px;
+font-size:12px;
+padding-top:15px;
+padding-bottom:15px
+}
+.arrivals a:hover{
+opacity:0.8;
+transition: opacity 0.5s;
+transition out:opacity 4s;
+}
+.girl{
+	width: 45%
+}
+footer{
+	background-color: black;
+	padding: 30px;
+	color:white;
+	margin-top: 50px;
+	text-align: center
+}
+footer span{
+	margin: 5px;
+	padding: 6px;
+	background-color: whitesmoke;
+	color: black;
+	border-radius: 50%
+}
+footer .credit{
+	margin-top: 8px;
+}
+.ham{
+	font-size: 30px;
+	display: none; 
+	cursor: pointer;
+	margin-top: 5px;
+}
+.ham i{
+	
+}
+@media screen and (max-width: 700px){
+	.link{
+		display: none
+	}
+		.ham{
+		display: block
+	}
+	#close{
+		display: none
+	}
+	header{
+		padding: 20px 20px;
+	}
+	.sales{
+		flex-direction: column;
+		padding: 0;
+		padding-bottom: 40px;
+	}
+	.arrivals, .girl{
+		width: auto
+	}
+	section .container{
+		flex-direction: column;
+		padding: 0;
+
+	}
+	section .container .product{
+		width: 97%;
+	}
+}
